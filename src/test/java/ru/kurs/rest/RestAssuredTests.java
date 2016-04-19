@@ -20,7 +20,7 @@ import static org.testng.Assert.assertEquals;
 /**
  * Created by yana on 4/18/2016.
  */
-public class RestAssuredTests {
+public class RestAssuredTests extends TestBase{
 
     @BeforeClass
     public void init(){
@@ -29,6 +29,9 @@ public class RestAssuredTests {
 
     @Test
     public void testCreateIssue() throws IOException {
+
+        //skipIfNotFixed(13);
+
         Set<Issue> oldIssues = getIssues();
         Issue newIssue = new Issue().withSubject("Test issue").withDescription("New test issue");
         int issueId = createIssue(newIssue);
