@@ -20,7 +20,7 @@ import static org.testng.Assert.assertEquals;
 /**
  * Created by yana on 4/18/2016.
  */
-public class RestAssuredTests extends TestBase{
+public class RestAssuredTests {
 
     @BeforeClass
     public void init(){

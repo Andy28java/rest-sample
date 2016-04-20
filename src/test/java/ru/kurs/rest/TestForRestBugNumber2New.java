@@ -3,10 +3,10 @@ package ru.kurs.rest;
 import org.testng.annotations.Test;
 
 /**
- * Created by yana on 4/18/2016.
+ * Created by yana on 4/20/2016.
  */
-public class TestForRestBugNumber11 extends TestBase {
-    private final int IssueId = 11;
+public class TestForRestBugNumber2New extends TestBase {
+    private final int IssueId = 2;
 
     @Override
     public int getIssueId() {
